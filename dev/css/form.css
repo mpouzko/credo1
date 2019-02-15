@@ -13,7 +13,7 @@
   border: 1px solid #D9DBE0;
   margin-bottom: 16px;
   margin-top: 16px;
-  z-index: 5; }
+  z-index: 4; }
   @media (min-width: 768px) {
     .form {
       width: 400px; } }

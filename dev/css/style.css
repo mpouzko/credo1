@@ -137,8 +137,8 @@ html, body {
     background: white;
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    -webkit-transition-property: opacity z-index;
-    transition-property: opacity z-index;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s; }
     @media (min-width: 576px) {
