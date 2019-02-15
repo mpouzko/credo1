@@ -1,0 +1,144 @@
+//Colors
+$black: #313038;
+$bg_grey: #fafafd;
+$border_grey:#D9DBE0;
+$btn_green:#00BA7C;
+$link_green:#00BA7C;
+$steel: #757e8e;
+.form {
+    width: 100%;
+    display: block;
+    position:relative;
+    box-sizing:border-box;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    border: 1px solid $border_grey;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    z-index:5;
+    
+    @media(min-width: 768px) {
+        width:400px;
+    }
+    &__section {
+        //background:$bg_grey;
+        background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 50%, $bg_grey 50%, $bg_grey 100%);
+        padding-bottom: 140px;
+        position:relative;
+        &:after {
+	    	position:absolute;
+	    	display:block;
+	    	content:'';
+	    	z-index:0;
+	    	width:200px;
+	    	height:200px;
+	    	top:calc( 50% - 200px );
+	    	left:calc(50% + 70px );
+	    	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='206' height='188' viewBox='0 0 206 188'%3E%3Cpath fill='%23F1F4F9' fill-rule='evenodd' d='M185.492 119.781c-11.093 21.07-22.9 42.682-38.919 56.388-16.019 13.707-35.664 14.923-59.43 3.018-23.21-11.482-50.538-36.088-69.065-64.266C-.667 86.175-3.685 59.725 6.728 40.851 17.14 21.98 45.376 6.098 78.528 2.362c33.15-3.736 98.224-3.525 118.803 20.738 20.578 24.263-1.303 75.19-11.84 96.682z'/%3E%3C/svg%3E%0A");
+	    	background-size:100% 100%;
+	    	background-repeat:no-repeat;
+	    	background-position:0 0;
+	    }
+	    &:before {
+	    	position:absolute;
+	    	display:block;
+	    	content:'';
+	    	z-index:0;
+	    	width:300px;
+	    	height:300px;
+	    	top:calc( 50% - 70px );
+	    	left:calc(50% - 300px );
+	    	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='273' height='276' viewBox='0 0 273 276'%3E%3Cpath fill='%23F0F8F9' fill-rule='evenodd' d='M131.132 1.006c33.609-.642 68.382-.77 96.296 9.687 27.918 10.458 42.925 33.902 44.582 71.371 1.795 36.495-9.76 87.015-31.774 129.093-22.564 42.735-53.11 64.476-83.544 64.462-30.434-.014-69.432-24.084-96.832-62.499C32.461 174.705-12.017 94.163 3.758 52.215 19.533 10.268 97.382 2.625 131.132 1.006z'/%3E%3C/svg%3E%0A");
+	    	background-size:100% 100%;
+	    	background-repeat:no-repeat;
+	    	background-position:0 0;
+	    }
+
+    }
+    &__title {
+        font-family: Roboto;
+        font-size: 28px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $black;
+        text-align: left;
+        margin-bottom: 32px;
+        margin-top: 16px;
+        @media (min-width: 768px) {
+        	font-size: 42px;
+        }
+    }
+    &__btn-big {
+        display: block;
+        background-color: $btn_green;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        transition-property: background-color;
+        transition-duration: 0.5s;
+        padding:16px 24px;
+        border-radius:28px;
+        height:56px;
+        min-width:188px;
+        box-sizing:border-box;
+     	margin-bottom: 30px;
+        margin-top: 12px;   
+        margin-left:auto;
+        margin-right:auto;
+        outline:none;
+        box-shadow:none;
+        border:none;
+        &:hover {
+            background-color: lighten($btn_green, 5%);
+            transition-property: background-color;
+            transition-duration: 0.5s;
+        }
+        &:active {
+            background-color: darken($btn_green, 10%);
+            transition-property: background-color;
+            transition-duration: 0.5s;
+        }
+    }
+    &__p {
+    	display:block;
+    	text-align:center;
+    	text-align:center;
+    	margin:2px auto;
+    	font-size: 16px;
+    }
+    &__hint {
+    	font-family: Roboto;
+    	
+    	font-weight: normal;
+    	font-style: normal;
+    	font-stretch: normal;
+    	line-height: normal;
+    	letter-spacing: normal;
+    	
+    	color: $steel;   
+    	
+    }
+    &__link {
+    	  font-family: Roboto;
+    	  font-size: 16px;
+    	  font-weight: normal;
+    	  font-style: normal;
+    	  font-stretch: normal;
+    	  line-height: 1.13;
+    	  letter-spacing: normal;
+    	  color: $link_green;
+    	
+    }
+}

@@ -1,0 +1,21 @@
+@import "_reboot.scss";
+@import "_init.scss";
+@import "_grid.scss";
+@import "_theme.scss";
+@import "_topnav.scss";
+@import "_footer.scss";
+@import "museosanscyrl.css";
+@import "roboto.css";
+
+.container .col {
+	padding-top: 72px;
+	padding-bottom: 72px;
+	@media (min-width:768px) {
+		width:50%;
+	}
+
+}
+
+
+
+

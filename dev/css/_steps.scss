@@ -1,0 +1,79 @@
+.c-steps {
+    margin-bottom: 3 * $gutter;
+    background-color: #fafafd;
+    &__step {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 576px) {
+            flex-direction:row;
+            margin-top:8 * $gutter;
+            margin-bottom:8 * $gutter;
+        }
+    }
+    &__col:nth-of-type(1) {
+        width: 65%;
+        margin-bottom: -2 * $gutter*2;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        @media (min-width: 576px) {
+            width: 33%;
+            margin-bottom: 0;
+            padding-right:5 * $gutter;
+        }
+    }
+    &__col:nth-of-type(2) {
+        padding-top: 2 * $gutter;
+        padding-bottom: 3 * $gutter;
+        width: 80%;
+        @media (min-width: 576px) {
+            width:44%;
+            padding-left:5 * $gutter;
+        }
+    }
+
+    &__number {
+        font-family: MuseoSansCyrl;
+        font-size: 48px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ddf5f2;
+        @media (min-width: 576px) {
+            font-size: 72px;
+        }
+    }
+    &__step-title {
+        font-family: MuseoSansCyrl;
+        font-size: 18px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        color: #4e96d4;
+        margin-bottom: 2 * $gutter;
+        margin-top: $gutter;
+        @media (min-width: 576px) {
+            font-size: 32px;
+            margin-bottom: 4 * $gutter;
+        }
+    }
+    &__text {
+        font-family: MuseoSansCyrl;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        @media (min-width: 576px) {
+            font-size: 18px;
+        }
+        color: #0c203b;
+
+    }
+}

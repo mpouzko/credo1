@@ -1,0 +1,106 @@
+.c-finance {
+	/*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='142' height='150' viewBox='0 0 142 150'%3E%3Ctext fill='%2300D38C' fill-rule='evenodd' font-family='MuseoSansCyrl-900, Museo Sans Cyrl' font-size='201' font-weight='bold' opacity='.067' transform='translate(-178 -1814)'%3E%3Ctspan x='172' y='1926'%3E%25%3C/tspan%3E%3C/text%3E%3C/svg%3E%0A");
+	background-position: top right;
+	background-repeat:no-repeat;
+	background-size:40% auto;*/
+	position:relative;
+
+	&:before {
+		display:block;
+		position:absolute;
+		top:0;
+		right:0;
+		opacity: 0.07;
+		font-family: MuseoSansCyrl;
+		font-size: 201px;
+		content:'%';
+		z-index:0;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 55%;
+		letter-spacing: normal;
+		color: #00d38c;
+		@media (min-width: 576px) {
+			top:auto;
+			bottom:0;
+			line-height: 70%;
+			font-size: 518px;
+        }
+	}
+
+
+	&__box {
+		padding-top:$gutter;
+		display:flex;
+		flex-direction:column;
+		@media (min-width: 576px) {
+			flex-direction:row;
+			justify-content: space-between;
+		}
+	}
+	&__col:nth-of-type(1) {
+			width:65%;
+			position:relative;
+			img {
+				width:100%;
+				height:auto;
+				margin-bottom:3 * $gutter;
+				left:-2 * $gutter;
+				position:relative;
+			}
+			@media (min-width: 576px) {
+				order:99;
+				width:48%;
+
+
+			}
+		}
+
+	&__col:nth-of-type(2) {
+		padding-top:2 * $gutter;
+		padding-bottom:3 * $gutter;
+		width:100%;
+		img {
+			display:inline-block;
+			margin-top:4 * $gutter;
+			margin-top:1 * $gutter;
+			width:100%;
+
+		}
+		@media (min-width: 576px) {
+				order:1;
+				width:35%;
+			}
+	}
+	&__text {
+	    font-family: MuseoSansCyrl;
+	    font-size: 14px;
+	    font-weight: 300;
+	    font-style: normal;
+	    font-stretch: normal;
+	    line-height: 1.29;
+	    letter-spacing: normal;
+	    color: #0c203b;
+	    @media (min-width: 576px) {
+	    	font-size: 18px;
+			margin-bottom:4 * $gutter;
+		}
+	}
+	&__hint {
+  		margin-top:3 * $gutter;
+  		margin-bottom:4 * $gutter;
+		font-family: MuseoSansCyrl;
+		font-size: 12px;
+		font-weight: 300;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.33;
+		letter-spacing: normal;
+		color: #757e8e;
+		padding-right:10*$gutter;
+	    @media (min-width: 576px) {
+			margin-bottom:12 * $gutter;	
+		}
+	}
+}

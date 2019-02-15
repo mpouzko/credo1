@@ -1,0 +1,36 @@
+html,body {
+	font-family: MuseoSansCyrl, Sans-serif;
+}
+
+
+
+.section-title {
+	  font-family: MuseoSansCyrl;
+	  font-size: 22px;
+	  font-weight: 900;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: 1.27;
+	  letter-spacing: normal;
+	  color: #313038;
+	  margin-bottom:$gutter;
+	  @media (min-width: 576px) {
+			font-size: 48px;
+			margin-bottom:5 * $gutter;
+		}
+	}
+
+.section {
+	padding-top: $gutter*3;
+	padding-bottom: $gutter*2;
+	padding-left: $gutter*2;
+	padding-right: $gutter*2;
+
+	@media (min-width: 576px) {
+		padding-top: $gutter*8;
+		padding-bottom: $gutter*8;
+		padding-left: $gutter*5;
+		padding-right: $gutter*5;
+
+	}
+}

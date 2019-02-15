@@ -1,0 +1,76 @@
+.c-hero {
+	padding-bottom: $gutter*2;
+	&-bg {
+		background-image:url('../img/3-rawpixel-760030-unsplash-copy@2x.png');
+		background-position:top right;
+		background-size: auto 85%;
+		background-repeat:no-repeat;
+		@media (min-width: 576px) {
+			background-size: auto 95%;
+			background-position: right top;
+			background-image:url('../img/3-rawpixel-760030-unsplash@2x.png');
+		}
+	}
+
+	&__col {
+		width:60%;
+		@media (min-width: 576px) {
+			width:45%;
+		}
+	}
+	&__title  {
+		font-family: MuseoSansCyrl, Sans-serif;
+		font-size: 24px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.11;
+		letter-spacing: normal;
+		color: #22195a;
+		margin-bottom:$gutter*2;
+		@media (min-width: 576px) {
+			font-size: 56px;			
+			margin-top: 3 * $gutter;
+		}
+
+
+	}
+	&__slogan {
+	  font-family: MuseoSansCyrl;
+	  font-size: 14px;
+	  font-weight: 300;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: 1.33;
+	  letter-spacing: normal;
+	  color: #313038;
+	  margin-bottom:$gutter*4;
+	  @media (min-width: 576px) {
+		  	font-size: 24px;
+			width:70%;
+			margin-bottom:$gutter*8;
+			margin-top:$gutter*6;
+		}
+	}
+	&__button  {
+	  display:inline-block;
+	  font-family: MuseoSansCyrl;
+	  text-decoration:none;
+	  font-size: 16px;
+	  font-weight: 500;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: normal;
+	  letter-spacing: normal;
+	  text-align: center;
+	  color: #ffffff;
+	  background-color:#00D38C;
+	  border-radius: 22px;
+	  padding: $gutter*1.5 $gutter*2;	  
+	  outline: none;
+	  @media (min-width: 576px) {
+		margin-bottom:$gutter*12;	
+		font-size: 22px;
+		}
+	}
+}
